@@ -1,18 +1,18 @@
 {
-  "name": "declarative-components",
-  "version": "0.0.43-development",
+  "name": "react-decent-virtualization",
+  "version": "0.0.1",
   "description": "",
   "keywords": [],
-  "main": "dist/declarative-components.umd.js",
-  "module": "dist/declarative-components.es5.js",
-  "typings": "dist/types/declarative-components.d.ts",
+  "main": "dist/react-decent-virtualization.umd.js",
+  "module": "dist/react-decent-virtualization.es5.js",
+  "typings": "dist/types/react-decent-virtualization.d.ts",
   "files": [
     "dist"
   ],
   "author": "osaario <osaario1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/osaario/declarative-components.git"
+    "url": "https://github.com/osaario/react-decent-virtualization.git"
   },
   "license": "MIT",
   "engines": {
