@@ -12,9 +12,7 @@ npm install react-decent-virtualization
 
 ```JSX
 import React from "react"
-
 import { ScrollContainer, TBody } from "react-decent-virtualization"
-import _ from "lodash"
 
 let id = 0
 
