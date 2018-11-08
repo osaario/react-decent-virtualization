@@ -31,7 +31,7 @@ export class TBody<T> extends React.Component<TBodyProps<T>> {
               return (
                 <React.Fragment key={key}>
                   {this.props.children(
-                    value,
+                    value
                   )}
                 </React.Fragment>
               )

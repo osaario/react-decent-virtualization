@@ -24,26 +24,19 @@ export class List<T> extends React.Component<ListProps<T>> {
       )
       const firstBlockHeight = firstIndexOnScreen * this.props.virtualization.rowHeight
       const lastBlockHeight = (this.props.value.length - lastIndexOnScreen) * this.props.virtualization.rowHeight
-      return (
-        <div style={{
-              paddingTop: firstBlockHeight,
-              paddingBottom: lastBlockHeight
-            }}>
-            { 
-              
-              this.props.value.slice(firstIndexOnScreen, lastIndexOnScreen).map(value => {
-            const key = value[this.props.childKey].toString()
-            return (
-              <React.Fragment key={key}>
-                {this.props.children(
-                  value
-                )}
-              </React.Fragment>
-            )
-          })
-            }
-
-        </div>
-      )
+        return (
+          <div style={{ paddingTop: firstBlockHeight, paddingBottom: lastBlockHeight }}>
+            {this.props.value.slice(firstIndexOnScreen, lastIndexOnScreen).map(value => {
+              const key = value[this.props.childKey].toString()
+              return (
+                <React.Fragment key={key}>
+                  {this.props.children(
+                    value
+                  )}
+                </React.Fragment>
+              )
+            })}
+          </div>
+        )
+    }
   }
-}
