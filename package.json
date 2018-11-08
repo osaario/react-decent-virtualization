@@ -2,7 +2,13 @@
   "name": "react-decent-virtualization",
   "version": "0.0.2",
   "description": "Declarative Components for React. Create asynchronous UI:s with ease.",
-  "keywords": [],
+  "keywords": [
+    "virtualization",
+    "virtualized",
+    "react",
+    "table",
+    "list"
+  ],
   "main": "dist/react-decent-virtualization.umd.js",
   "module": "dist/react-decent-virtualization.es5.js",
   "typings": "dist/types/react-decent-virtualization.d.ts",
