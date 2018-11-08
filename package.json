@@ -1,7 +1,7 @@
 {
   "name": "react-decent-virtualization",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Declarative Components for React. Create asynchronous UI:s with ease.",
   "keywords": [],
   "main": "dist/react-decent-virtualization.umd.js",
   "module": "dist/react-decent-virtualization.es5.js",
@@ -12,7 +12,7 @@
   "author": "osaario <osaario1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/osaario/react-decent-virtualization.git"
+    "url": "git+https://github.com/osaario/react-decent-virtualization.git"
   },
   "license": "MIT",
   "engines": {
@@ -122,5 +122,12 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/osaario/react-decent-virtualization/issues"
+  },
+  "homepage": "https://github.com/osaario/react-decent-virtualization#readme",
+  "directories": {
+    "test": "test"
+  }
 }
