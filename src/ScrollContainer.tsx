@@ -14,6 +14,10 @@ export class ScrollContainer extends React.Component<
     scrollTop: null,
     containerHeight: null
   }
+  onScroll = (e: any) => {
+    const elem = e.target as any
+    this.setState({ scrollTop: elem.scrollTop })
+  }
 
   // expose scrollTo !!!!
 
@@ -23,6 +27,7 @@ export class ScrollContainer extends React.Component<
       <div
         {...restProps}
         ref={this.virtualizationRef}
+        onScroll={this.onScroll}
         style={{
           width: '100%',
           height: '100%',
@@ -32,16 +37,13 @@ export class ScrollContainer extends React.Component<
           right: 0,
           ...restProps.style,
           overflow: 'scroll',
+          WebkitOverflowScrolling: 'touch',
           position: 'absolute'
-        }}
-        onScroll={e => {
-          const elem = e.target as any
-          this.setState({ scrollTop: elem.scrollTop })
         }}
       >
         {this.state.scrollTop != null &&
           this.state.containerHeight != null &&
-          this.props.children(this.state.scrollTop!, this.state.containerHeight!)}
+          children(this.state.scrollTop!, this.state.containerHeight!)}
       </div>
     )
   }
