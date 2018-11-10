@@ -1,6 +1,6 @@
 {
   "name": "react-decent-virtualization",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Declarative Components for React. Create asynchronous UI:s with ease.",
   "keywords": [
     "virtualization",
