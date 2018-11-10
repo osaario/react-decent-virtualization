@@ -1,6 +1,6 @@
 # React Decent Virtualization
 
-Virtualization that works decent enough. Supports lists and table bodies.
+Small virtualization library for React. Works decent enough for most cases. Supports lists and table bodies.
 
 ## Installation
 
