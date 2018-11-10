@@ -8,9 +8,16 @@ Virtualization that works decent enough. Supports lists and table bodies.
 npm install react-decent-virtualization
 ```
 
-## Example
+## How to use
 
-*Decent virtualization is super easy to use*. Just import the virtualized container `TBody` or `List` with the `rowHeight` *prop* and you are good to go.
+*Decent virtualization is super easy to use*. Just import the virtualized container `TBody` or `List` with the `rowHeight` *prop* and you are good to go. Using a `fixed-width` table with `TBody` is probably a good idea or otherwise the column widths change un-elegantly on the fly.
+
+Be sure that your virtualized list row child is a really unexpensive to render. You probably want to shave from it as much as possible so here are a couple of things to consider: 
+
+1. Avoid unneccessary inline functions or lambdas.
+2. Prefer classes before inline-styles (This example does use inline styles).
+3. `PureComponent` optimized children might be a little more efficient, depending on the case.
+
 
 ```JSX
 import React from "react"
