@@ -1,4 +1,3 @@
-export * from './ScrollContainer'
 export * from './VirtualContainer'
 
 export default {}
