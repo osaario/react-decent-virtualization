@@ -10,9 +10,12 @@ npm install react-decent-virtualization
 
 ## Example
 
+*Decent virtualization is super easy to use*. Just import the virtualized container `TBody` or `List` with the `rowHeight` *prop* and you are good to go.
+
 ```JSX
 import React from "react"
-import { ScrollContainer, TBody } from "react-decent-virtualization"
+
+import { TBody } from "react-decent-virtualization"
 
 let id = 0
 
@@ -50,39 +53,31 @@ for (let i = 0; i < 100000; i = i + 1) {
 class App extends React.Component {
   render() {
     return (
-      <ScrollContainer>
-        {(scrollTop, containerHeight) => (
-          <div>
-            <h2>{data.length} users</h2>
-            <table style={{ tableLayout: "fixed", width: "100%", overflow: "hidden" }}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Name</th>
-                  <th style={thStyle}>Email</th>
-                  <th>Phone</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <TBody
-                childKey={"id"}
-                virtualization={{
-                  rowHeight: 34,
-                  containerHeight,
-                  renderAround: 5,
-                  scrollTop
-                }}
-                value={data}
-              >
-                {user => <UserRow key={user.id} user={user} />}
-              </TBody>
-            </table>
-          </div>
-        )}
-      </ScrollContainer>
+      <div>
+        <h2>{data.length} users</h2>
+        <table style={{ tableLayout: "fixed", width: "100%", overflow: "hidden" }}>
+          <thead>
+            <tr>
+              <th style={thStyle}>Name</th>
+              <th style={thStyle}>Email</th>
+              <th>Phone</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <TBody
+            childKey={"id"}
+            virtualization={{
+              rowHeight: 34
+            }}
+            value={data}
+          >
+            {user => <UserRow key={user.id} user={user} />}
+          </TBody>
+        </table>
+      </div>
     )
   }
 }
-export default App
 ```
 
 ## Acknowledgements
