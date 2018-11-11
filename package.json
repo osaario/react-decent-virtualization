@@ -1,7 +1,7 @@
 {
   "name": "react-decent-virtualization",
-  "version": "0.0.4",
-  "description": "Declarative Components for React. Create asynchronous UI:s with ease.",
+  "version": "0.0.6",
+  "description": "Small virtualization library for React. Works decent enough for most cases. Supports lists and table bodies.",
   "keywords": [
     "virtualization",
     "virtualized",
